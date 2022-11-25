@@ -1,0 +1,25 @@
+//字符串拷贝函数
+int len = 0,i = 0;
+char *p,*s = src
+
+//1、计算长度
+while(*s != '\0'){
+	s ++;
+	len ++;
+}
+
+//2、malloc申请
+char *p = (char *) malloc(len);
+
+//3、复制
+for(i=0,i<len,i++){
+	*p = *src;
+	p ++;
+	src ++;
+}
+
+//4、最后放'\0'
+*p = '\0';
+
+//5、返回
+return *p;
